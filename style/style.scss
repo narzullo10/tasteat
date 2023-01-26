@@ -1,0 +1,1289 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header_menu{
+    width: 100%;
+}
+.main-menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: 0.3s ;
+    padding: 40px 0;
+    background-color:#292E36;
+    box-shadow: 0px 0px 8px 0px rgba(34, 90, 80, 0.2);
+}
+.navbar-main-container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    background-color: #292E36;
+        .navbar_container{
+            width: 95%;
+            margin: 0 auto;
+                .navbar_top{
+                    width: 100%;
+                    height: 220px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media screen and (min-width: 320px) and (max-width: 780px){
+                        display: none;
+                    }
+                        h1{
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 400;
+                            font-size: 22px;
+                            line-height: 33px;
+                            padding: 16px 54px;
+                            border: 2px solid #E1B168;
+                            color:#fff;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+                        h1:hover{
+                            box-shadow: 0px 0px 0px 3px #E1B168;
+                        }
+                        h1:last-child{
+                            background-color:#E1B168;
+                            color:  #292E36;
+                        }
+                        h1:last-child:hover{
+                            background-color:transparent;
+                            color: #fff;
+                        }
+                        img{
+                            width: 300px;
+                        }
+                }
+                .navbar_main{
+                    width: 100%;
+                    padding: 30px 0;
+                        .nav_menu,
+                        .nav_social_menu{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items:center;
+                            width: 50%;
+                            list-style: none;
+                            cursor: pointer;
+                                li{
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    letter-spacing: 0.2px;
+                                    font-family:'Josefin Sans', sans-serif ;
+                                    transition: 0.3s;
+                                        a{
+                                            color:#fff;
+                                            text-transform: capitalize;
+                                            text-decoration: none;
+                                        }
+                                        a.active{
+                                            color: #E1B168;
+                                        }
+                                        a:hover{
+                                            color: #E1B168;
+                                        }
+                                }
+                        }
+                        .nav_social_menu{
+                            width: 11% !important;
+                        }
+                }
+        }
+}
+#section{
+    background-color: #292E36;
+    width: 100%;
+    .container{
+        width: 95%;
+        height:100%;
+        margin: 0 auto;
+            .main_content{
+                height: 100%;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                    .main_content_body{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        width: 50%;
+                        margin-bottom: 80px;
+                        @media screen and (min-width: 320px) and (max-width: 480px){
+                            width: 100%;;
+                        }
+                            h1{
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 100px;
+                                line-height: 110px;
+                                letter-spacing: 0.2px;
+                                color: #FFFFFF;
+                                font-family: 'Cormorant Infant', serif;
+                                margin-bottom: 26px;
+                            }
+                            p{
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 30px;
+                                letter-spacing: 0.2px;
+                                color: #FFFFFF;
+                                margin-bottom: 30px;
+                            }
+                            div{
+                                display: flex;
+                                flex-direction: row;
+                                    a{
+                                        font-family: 'Josefin Sans';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 22px;
+                                        line-height: 33px;
+                                        text-align: center;
+                                        letter-spacing: 0.2px;
+                                        color: #E1B168;
+                                        padding: 20px 57px;
+                                        border:2px solid #E1B168;
+                                        text-decoration: none;
+                                        width: 230px;
+                                        margin-right: 30px;
+                                    }
+                                    a:last-child{
+                                        width: 320px;
+                                    }
+                                    a:hover{
+                                        box-shadow: 0px 0px 0px 3px #E1B168;
+                                    }
+                            }
+                    }
+                    .main_content_img{
+                        position: relative;
+                        @media screen and (min-width: 320px) and (max-width: 480px){
+                            display: none;
+                        }
+                            img{
+                                width: 600px;
+                                border-top: 30px solid rgba(255, 255, 255, 0.1);
+                                border-left: 30px solid rgba(255, 255, 255, 0.1);
+                                border-right: 30px solid rgba(255, 255, 255, 0.1);
+                            }
+                            .left-cub,
+                            .right-cub{
+                                width: 30px;
+                                height: 30px;
+                                background-color:#292E36;
+                                position:absolute
+                            }
+                            .right-cub{
+                                right: 0%;
+                                top: 0%;
+                            }
+                    }
+            }
+    }
+}
+#services{
+    background-color:#FFF8F5 !important;
+    width: 100%;
+    height: 243px;
+        .container{
+           width: 95%;
+           margin: 0 auto;
+                .services{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 80px 0 60px;
+                        .services_item{
+                            display: flex;
+                            flex-direction: row;
+                            align-items:center;
+                                .services_item_context{
+                                    padding-left: 20px;
+                                        h3{
+                                            font-family: 'Cormorant Infant';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 30px;
+                                            line-height: 39px;
+                                            letter-spacing: 0.2px;
+                                            color: #292E36;
+                                        }
+                                        h6{
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            letter-spacing: 0.2px;
+                                            color: #555555;
+                                        }
+                                }
+                        }
+                }
+       }
+}
+#about-us{
+    background-color:#FFF8F5;
+    width: 100%;
+    height: 100%;   
+        .container{
+            width: 95%;
+            margin: 0 auto;
+                .about_us{
+                    padding: 84px 0 100px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                        .about_us_context{
+                            padding-left: 45px;
+                            h1{
+                                font-family: 'Cormorant Infant';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 40px;
+                                line-height: 56px;
+                                letter-spacing: 0.2px;
+                                color: #292E36;
+                            }
+                            p{
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 30px;
+                                letter-spacing: 0.2px;
+                                color: #555555;
+                            }
+                            .year{
+                                display: flex;
+                                flex-direction: row;
+                                padding-top: 25px;
+                                padding-bottom: 20px;
+                                    .year-plan{
+                                        h3{
+                                            font-family: 'Cormorant Infant';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 40px;
+                                            line-height: 56px;
+                                            letter-spacing: 0.2px;
+                                            color: #292E36;
+                                        }
+                                        p{
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            letter-spacing: 0.2px;
+                                            color: #555555;
+                                        }
+                                    }
+                            }
+                            h6{
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 30px;
+                                letter-spacing: 0.2px;
+                                color: #555555;
+                            }
+                            img{
+                                padding-top: 10px;
+                            }
+                        }
+                }
+        }
+}
+#menu{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 80px;
+        .container{
+            width: 95%;
+            margin: 0 auto;
+                .menu{
+                    width: 100%;
+                        h6{
+                            width: 5%;
+                            font-family: 'Josefin Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 22px;
+                            letter-spacing: 3px;
+                            text-transform: uppercase;
+                            color: #292E36;
+                            padding: 5px;
+                            border-top:2px solid  #E1B168;
+                            border-bottom:2px solid  #E1B168;
+                        }
+                        .menu_group{
+                            width: 100%;
+                            padding-top: 12px;
+                            display: flex;
+                            flex-direction: row;
+                            //justify-content: space-between;
+                                .menu_group_main_item{
+                                    width: 40%;
+                                    display: flex;
+                                    flex-direction: column;
+                                        h1{
+                                            font-family: 'Cormorant Infant';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 40px;
+                                            line-height: 56px;
+                                            letter-spacing: 0.2px;
+                                            text-transform: capitalize;
+                                            color: #292E36;
+                                        }
+                                        p{  
+                                            width: 85%;
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            letter-spacing: 0.2px;
+                                            color: #555555;
+                                        }
+                                        img{
+                                            width: 398px;
+                                            padding:45px 0 60px
+                                        }
+                                        a{
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 22px;
+                                            line-height: 33px;
+                                            text-align: center;
+                                            letter-spacing: 0.2px;
+                                            color: #E1B168;
+                                            padding: 20px 57px;
+                                            border:2px solid #E1B168;
+                                            width: 50%;
+                                            text-decoration: none;
+                                        }
+                                        a:hover{
+                                            box-shadow: 0px 0px 0px 3px #E1B168;
+                                        }
+                                }
+                                .menu_group_item{
+                                    width: 60%;
+                                        .main-item-group:nth-child(2),
+                                        .main-item-group:last-child{
+                                            padding-top: 55px;
+                                        }
+                                        h1{
+                                            font-family: 'Cormorant Infant';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 36px;
+                                            line-height: 50px;
+                                            letter-spacing: 0.2px;
+                                            color: #292E36;
+                                        }
+                                        .menu_group_list_item{
+                                            width: 100%;
+                                            padding-top: 30px;
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items:center;
+                                            justify-content: space-between;
+                                                .item{
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    align-items:center;
+                                                }
+                                                img{
+                                                    width: 84px;
+                                                }
+                                                h1{
+                                                    font-family: 'Cormorant Infant';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 30px;
+                                                    line-height: 42px;
+                                                    letter-spacing: 0.2px;
+                                                    color: #292E36;
+                                                }
+                                                .menu_group_item-name{
+                                                    padding-left: 20px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: flex-start;
+                                                        h3{
+                                                            font-family: 'Cormorant Infant';
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            font-size: 28px;
+                                                            line-height: 34px;
+                                                            letter-spacing: 0.2px;
+                                                            color: #292E36;
+                                                        }
+                                                        h5{
+                                                            font-family: 'Josefin Sans';
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            font-size: 20px;
+                                                            line-height: 30px;
+                                                            letter-spacing: 0.2px;
+                                                            color: #555555;
+                                                            
+                                                        }
+                                                }
+                                                
+                                                
+                                        }
+                                }
+                        }
+                }
+
+        }
+}
+#testimonial{
+    width: 100%;
+    background-color:#292E36;
+    height: 100%;
+        .bg-img{
+           width: 100%;
+           height: 600px; 
+        }
+        .container{
+            width: 95%;
+            margin: 0 auto;
+                .testimonials{
+                    padding: 120px 0;
+                        h1{
+                            font-family: 'Josefin Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 22px;
+                            letter-spacing: 3px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            border-top: 1px solid #E1B168;
+                            border-bottom: 1px solid #E1B168;
+                            width: 10%;
+                        }
+                        h2{
+                            font-family: 'Cormorant Infant';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 40px;
+                            line-height: 56px;
+                            letter-spacing: 0.2px;
+                            text-transform: capitalize;
+                            color: #FFFFFF;
+                            padding-top: 7px;
+                        }
+                        p{
+                            font-family: 'Josefin Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 30px;
+                            letter-spacing: 0.2px;
+                            color: #FFFFFF;
+                        }
+                        .mySwiper{
+                            padding-top: 80px;
+                            .swiper-wrapper{
+                                padding-bottom: 100px;
+                            }
+                            .swiper-pagination-fraction{
+                                bottom: -20px;
+                            }
+                            .swiper-pagination-bullet-active{
+                                background-color: #FFFFFF;
+                                box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
+                            }
+                            .swiper-pagination-bullet{
+                                width: 20px;
+                                height: 20px;
+                                background-color: rgb(255, 255, 255);
+                                box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);;
+                            }
+                                .swiper-slide{
+                                    padding: 40px;
+                                    background-color: #343942;
+                                        .testimonial-author{
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items:center;
+                                            padding-bottom: 30px;
+                                                img{
+                                                    width: 113px;
+                                                }
+                                                .testimonial-author-name{
+                                                    padding-left: 30px;
+                                                        h3{
+                                                            font-family: 'Cormorant Infant';
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            font-size: 30px;
+                                                            line-height: 42px;
+                                                            letter-spacing: 0.2px;
+                                                            color: #FFFFFF;
+                                                        }
+                                                        h4{
+                                                            font-family: 'Josefin Sans';
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            font-size: 20px;
+                                                            line-height: 30px;
+                                                            letter-spacing: 0.2px;
+                                                            color: #E1B168;
+                                                        }
+                                                }
+                                        }
+                                        .testimonial-author-description{
+                                            padding-top: 30px;
+                                                p{
+                                                    font-family: 'Cormorant Infant';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 24px;
+                                                    line-height: 38px;
+                                                    letter-spacing: 0.25px;
+                                                    color: #FFFFFF;
+
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+        .offers{
+            width: 100%;
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+                a{
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 33px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: #E1B168;
+                    text-decoration: none;
+                    padding: 18px 57px;
+                    border:2px solid #E1B168;
+                }
+                a:hover{
+                    box-shadow: 0px 0px 0px 3px #E1B168;
+                }
+                .offers-description{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items:center;
+                    h6{
+                        font-family: 'Josefin Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: #292E36;
+                        border-top:1px solid #E1B168;
+                        border-bottom:1px solid #E1B168;
+                        width: 10%;
+                    }
+                    h1{
+                        font-family: 'Cormorant Infant';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 56px;
+                        text-align: center;
+                        letter-spacing: 0.2px;
+                        text-transform: capitalize;
+                        color: #292E36;
+                        padding: 5px 0;
+                    }
+                    h3{
+                        font-family: 'Josefin Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        letter-spacing: 0.2px;
+                        color: #555555;
+                    }
+                }
+                .offers-group{
+                    padding-top: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                        .offers-group-item{
+                            background-image: url(../img/offer-bg.png);
+                            display: flex;
+                            padding: 40px;
+                            width: 49%;
+                            height: 380px;
+                            align-items:center;
+                                .offers-group-item-context{
+                                    width: 48%;
+                                    .cloud-price{
+                                        position: relative;
+                                        img{
+                                            width: 160px;
+                                        }
+                                        .cloud-text{
+                                            position: absolute;
+                                            text-align: center;
+                                            top: 20px;
+                                            left: 40px;
+                                                h5{
+                                                    font-family: 'Josefin Sans';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 15px;
+                                                    line-height: 10px;
+                                                    letter-spacing: 0.15px;
+                                                    text-transform: uppercase;
+                                                    color: #292E36;
+                                                }
+                                                h6{
+                                                    font-family: 'Cormorant Infant';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 50px;
+                                                    line-height: 50px;
+                                                    letter-spacing: 0.2px;
+                                                    color: #292E36;
+                                                }
+                                        }
+                                    }
+                                    h3{
+                                        font-family: 'Josefin Sans';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        letter-spacing: 4.5px;
+                                        text-transform: uppercase;
+                                        color: #292E36;
+                                        padding-top: 43px;
+                                    }
+                                    h2{
+                                        font-family: 'Cormorant Infant';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 40px;
+                                        line-height: 56px;
+                                        letter-spacing: 0.2px;
+                                        color: #292E36;
+                                    }
+                                    p{
+                                        font-family: 'Josefin Sans';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                        letter-spacing: 0.2px;
+                                        color: #555555;
+                                    }
+                                }
+                                .dish-image{
+                                    width: 280px;
+                                    height: 240px;
+                                }
+                        }
+                        .offers-group-item:last-child{
+                            background-image: url(../img/offer-bg2.png);
+                            background-size: 100%;
+                                .cloud-text{
+                                    left: 55px !important;
+                                    h5,
+                                    h6{
+                                        color: #fff !important;
+                                    }
+                                }
+                        }
+                }
+        }
+}
+
+.popular-dishes-group{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        .popular-dishes-item{
+            width: 300px;
+                img{
+                    width: 100%;
+                }
+                .popular-dish-name{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 9px 0 11px;
+                    align-items:center;
+                    border-bottom:1px solid #DCDCDC;
+                        h2{
+                            font-family: 'Cormorant Infant';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 30px;
+                            line-height: 42px;
+                            letter-spacing: 0.2px;
+                            color: #292E36;
+                        }
+                }
+                h3{
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0.2px;
+                    color: #555555;
+                    padding-top: 13px;
+                }
+        }
+}
+
+#work{
+    margin-top: 140px;
+    background-color: #292E36;
+    width: 100%;
+    height: 100%;
+        .container{
+            width: 95%;
+            margin: 0 auto;
+            padding: 130px 0;
+                .work{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items:center;
+                        .work-context{
+                            width: 30%;
+                                h3{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 22px;
+                                    letter-spacing: 3px;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+                                    border-top:1px solid #E1B168;
+                                    border-bottom:1px solid #E1B168;
+                                    width: 42%;
+                                }
+                                h1{
+                                    font-family: 'Cormorant Infant';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 40px;
+                                    line-height: 56px;
+                                    letter-spacing: 0.2px;
+                                    text-transform: capitalize;
+                                    color: #FFFFFF;
+                                    padding: 5px 0;
+                                }
+                                p{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    letter-spacing: 0.2px;
+                                    color: #FFFFFF;
+
+                                }
+                        }
+                        .work-group{
+                            display: flex;
+                            flex-direction: row;
+                                .work-group-item{
+                                    padding: 50px 45px;
+                                    border:20px solid #323841;
+                                    margin-left: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items:center;
+                                        img{
+                                            width: 60px;
+                                        }
+                                        h2{
+                                            font-family: 'Cormorant Infant';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 25px;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            letter-spacing: 0.2px;
+                                            color: #FFFFFF;
+                                            padding-top: 15px;
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+.Blog{
+    width: 12% !important;
+}
+
+.blog-item{
+    width: 49%;
+    height: 100%;
+    position: relative;
+        .blog-img{
+            position: relative;
+                img{
+                    width: 100%;
+                    height: 384px;
+                }
+                .blog-view{
+                    position: absolute;
+                    top: 45%;
+                    left: 30%;
+                    z-index: 1;
+                        a{
+                            background-color: #E1B168;
+                            color: #292E36;
+                            font-family: 'Josefin Sans' !important;
+                            font-style: normal;
+                            font-weight: 400;
+                            transition: 0.3s;
+                        }
+                        a:hover{
+                            background-color:transparent;
+                            color: #fff;
+                        }
+                }
+        }
+        .blog-img::after{
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.65);
+        }
+        .blog-context{
+            padding: 44px 30px;
+            border: 1px solid #C4C4C4;
+            border-top:none;
+                .data-name{
+                    display: flex;
+                    flex-direction: row;
+                        h1{
+                            font-family: 'Josefin Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 22px;
+                            letter-spacing: 3px;
+                            text-transform: uppercase;
+                            color: #292E36;
+                            border-top:1px solid #E1B168;
+                            border-bottom:1px solid #E1B168;
+                        }
+                        h1:last-child{
+                            margin-left: 30px;
+                        }
+                }
+                h2{
+                    font-family: 'Cormorant Infant';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 39px;
+                    letter-spacing: 0.2px;
+                    text-transform: capitalize;
+                    color: #292E36;
+                    padding-top: 26px;
+                }
+                p{
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0.2px;
+                    color: #555555;
+                    padding-top: 24px;
+                }
+        }
+}
+
+#reservation{
+    width: 100%;
+    height: 800px;
+    background-image:url(../img/IMAGE.png);
+    background-size: 100%;
+    margin-top: 40px;
+        .container{
+            width: 95%;
+            margin: 0 auto;
+                .reservation{
+                    margin: 0 auto;
+                    transform: translateY(20%);
+                    width: 70%;
+                    background: rgba(41, 46, 54, 0.95);
+                        .reservation-item{
+                            padding: 80px;
+                            display: flex;
+                            align-items:center;
+                            flex-direction: column;
+                                h1{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 22px;
+                                    text-align: center;
+                                    letter-spacing: 3px;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+                                    border-top: 1px solid #E1B168;
+                                    border-bottom: 1px solid #E1B168;
+                                }
+                                h2{
+                                    font-family: 'Cormorant Infant';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 40px;
+                                    line-height: 56px;
+                                    text-align: center;
+                                    letter-spacing: 0.2px;
+                                    text-transform: capitalize;
+                                    color: #FFFFFF;
+                                    padding-top: 11px;
+                                }
+                                input{
+                                    background-color:rgba(41, 46, 54, 0.95) !important;
+                                    border-color: #fff !important;
+                                    color: white !important;
+                                }
+                                input::placeholder{
+                                    color:#fff;
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                }
+                                form{
+                                    padding: 30px 0 30px;
+                                        .inputs{
+                                            display: flex;
+                                            flex-direction: row;
+                                                input{
+                                                    width: 300px;
+                                                    height: 70px;
+                                                    padding-left: 15px;
+                                                    font-family: 'Josefin Sans';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 33px;
+                                                    letter-spacing: 0.2px;
+                                                    color: #FFFFFF;
+                                                }
+                                                input:last-child{
+                                                    margin-left: 26px;
+                                                }
+                                        }
+                                        .other-informs{
+                                            padding-top: 30px;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                                input{
+                                                    width: 195px;
+                                                    height: 70px;
+                                                    padding: 0 23px;
+                                                    font-family: 'Josefin Sans';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 22px;
+                                                    line-height: 33px;
+                                                    letter-spacing: 0.2px;
+                                                    color: #FFFFFF;
+                                                }
+                                        }
+                                }
+                                .sub{
+                                    padding: 23px 70px;
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 22px;
+                                    line-height: 33px;
+                                    text-align: center;
+                                    letter-spacing: 0.2px;
+                                    color: #000000 ;
+                                    background-color:#fff;
+                                    outline: none !important;
+                                }
+                                .btn{
+                                    transition: all 0.5s;
+                                    position: relative;
+                                }
+                                .btn::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 1;
+                                    background-color: rgba(255,255,255,0.1);
+                                    transition: all 0.3s;
+                                }
+                                .btn:hover::before {
+                                    opacity: 0 ;
+                                    transform: scale(0.5,0.5);
+                                }
+                                .btn::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 1;
+                                    opacity: 0;
+                                    transition: all 0.3s;
+                                    border: 1px solid rgba(255,255,255,0.5);
+                                    transform: scale(1.2,1.2);
+                                }
+                                .btn:hover::after {
+                                    opacity: 1;
+                                    transform: scale(1,1);
+                                }
+                        }
+                }
+        }
+}
+
+#footer{
+    background-color:#292E36;
+        .container{
+            width: 95%;
+            margin: 0 auto;
+                .footer{
+                    padding: 129px 0 100px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                        .contact{
+                            padding-top: 75px;
+                                h3{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 22px;
+                                    line-height: 33px;
+                                    letter-spacing: 0.2px;
+                                    color: #FFFFFF;
+                                }
+                                .contact-item{
+                                    padding-top: 95px;
+                                        h1{
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 15px;
+                                            line-height: 21px;
+                                            letter-spacing: 3px;
+                                            text-transform: uppercase;
+                                            color: #FFFFFF;
+                                            border-top:1px solid #E1B168;
+                                            border-bottom:1px solid #E1B168;
+                                            width: 42%;
+                                        }
+                                        h2{
+                                            padding-top: 20px;
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            letter-spacing: 0.2px;
+                                            color: #FFFFFF;
+                                        }
+                                        h5{
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 19px;
+                                            line-height: 30px;
+                                            letter-spacing: 0.2px;
+                                            color: #E1B168;
+                                        }
+                                }
+                        }
+                        .footer-logo{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                                img{
+                                    width: 350px;
+                                    padding-bottom: 16px;
+                                }
+                                p{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    letter-spacing: 0.2px;
+                                    color: #FFFFFF;
+                                }
+                                .footer-form{
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding-top: 20px;
+                                        input{
+                                            padding: 17px 24px;
+                                            width: 450px;
+                                            font-family: 'Josefin Sans';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 22px;
+                                            line-height: 33px;
+                                            letter-spacing: 0.2px;
+                                            color: #FFFFFF;
+                                            background-color:transparent;
+                                            border-color:white
+
+                                        }
+                                        input::placeholder{
+                                            color:white;
+                                        }
+                                        input:last-child{
+                                            width: 200px;
+                                            color:#000;
+                                            background-color:white
+                                        }
+                                }
+                        }
+                        .footer-service{
+                            padding-top: 60px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                                .footer_social_menu{
+                                    display: flex;
+                                    flex-direction: row;
+                                    list-style: none;
+                                        .footer_social_menu_item{
+                                            margin-right: 20px;
+                                        }
+                                }
+                                h3{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 21px;
+                                    letter-spacing: 3px;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+                                    border-top:1px solid #E1B168;
+                                    border-bottom:1px solid #E1B168;
+                                    width: 72%;
+                                    margin-top: 95px;
+                                    margin-bottom: 20px;
+                                }
+                                h5{
+                                    font-family: 'Josefin Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    text-align: right;
+                                    letter-spacing: 0.2px;
+                                    color: #FFFFFF;
+                                        span{
+                                            color: #E1B168;
+                                            padding-right: 5px
+                                        };
+                                }
+
+                        }
+                }
+        }
+}
+
+
+#img_slide-about{
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+}
+
+#map{
+    width: 100%;
+    margin: 0 auto;
+    margin: 40px 0;
+        .google-map{
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                h1{
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 400;
+                    font-size: 36px;
+                    line-height: 38px;
+                    padding: 60px 0 40px;
+                    color:#292E36;
+                }
+        }
+}

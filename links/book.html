@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="navbar" >
+        <div class="navbar_container">
+            <div class="navbar_top">
+                <h1>Call - 123 456 789</h1>
+                <img src="../img/logo.png">
+                <h1>Reservation</h1>
+            </div>
+            <hr>
+            <div class="navbar_main" id="header_menu">
+                <div class="navbar-main-container">
+                    <ul class="nav_menu">
+                        <li class="nav_item">
+                            <a  href="../index.html">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a  href="About-us.html">About us</a>
+                        </li>
+                        <li class="nav_item">
+                            <a  href="#">Our Menu</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav_item">
+                            <a  class="active" href="book.html">Reservation</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="contakt.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="nav_social_menu">
+                        <li class="nav_social_menu_item">
+                            <a href="#"><img src="../img/i.png" alt="insta"></a>
+                        </li>
+                        <li class="nav_social_menu_item">
+                            <a href="#"><img src="../img/f.png" alt="face"></a>
+                        </li>
+                        <li class="nav_social_menu_item">
+                            <a href="#"><img src="../img/t.png" alt="twiter"></a>
+                        </li>
+                        <li class="nav_social_menu_item">
+                            <a href="#"><img src="../img/p.png" alt="pinta"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reservation" style="margin-top: 0 !important; ">
+        <div class="container">
+            <div class="reservation">
+                <div class="reservation-item">
+                    <h1>reservation</h1>
+                    <h2>Book Your Table</h2>
+                    <form>
+                        <div class="inputs">
+                            <input type="text" name="fname" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="other-informs">
+                            <input type="number" id="quantity" name="quantity" placeholder="Persons" min="1" max="60">
+                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" placeholder="timing" required>
+                            <input type="date" id="datemin" name="datemin" min="2022-05-10">
+                        </div>
+                    </form>
+                    <div class="btn">
+                        <input class="sub" type="submit" value="Book A Table">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="contact">
+                    <h3>#TheTastEat</h3>
+                    <div class="contact-item">
+                        <h1>Contact</h1>
+                        <h2>5 Rue Dalou, 75015 Paris</h2>
+                        <h5>+123 456 789</h5>
+                        <h5>josefin@mail.com</h5>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="../img/logo.png" alt="">
+                    <p>Join our mailing list for updates,</p>
+                    <p>Get news & offers events.</p>
+                    <div class="footer-form">
+                        <input type="email" placeholder="Email">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </div>
+                <div class="footer-service">
+                    <ul class="footer_social_menu">
+                        <li class="footer_social_menu_item">
+                            <a href="#"><img src="../img/i.png" alt="insta"></a>
+                        </li>
+                        <li class="footer_social_menu_item">
+                            <a href="#"><img src="../img/f.png" alt="face"></a>
+                        </li>
+                        <li class="footer_social_menu_item">
+                            <a href="#"><img src="../img/t.png" alt="twiter"></a>
+                        </li>
+                        <li class="footer_social_menu_item">
+                            <a href="#"><img src="../img/p.png" alt="pinta"></a>
+                        </li>
+                    </ul>
+                    <h3>Working Hours</h3>
+                    <h5><span>Mon – Fri:</span>7.00am – 6.00pm</h5>
+                    <h5><span>Sat:</span>7.00am – 6.00pm</h5>
+                    <h5><span>Sun:</span>8.00am – 6.00pm</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
